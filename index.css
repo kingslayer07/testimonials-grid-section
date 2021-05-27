@@ -1,0 +1,123 @@
+:root{
+    --clr-moderate-violet: hsl(263, 55%, 52%);
+    --clr-greyish-blue: hsl(217, 19%, 35%);
+    --clr-balckish-blue: hsl(219, 29%, 14%);
+    --clr-primary-white: hsl(0, 0%, 100%);
+
+    --clr-neutral-light-grey: hsl(0, 0%, 81%);
+    --clr-neutral-greyish-blue: hsl(210, 46%, 95%);
+
+
+}
+
+
+body{
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    padding: 5vh 5vw;
+    box-sizing: border-box;
+    background-color: var(--clr-neutral-greyish-blue);
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,20vw ) ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "daniel daniel jon kira "
+    "jean pat pat kira";
+    grid-gap: 20px;
+}
+/* .main-card{
+
+    padding: 4vh 6vw;
+    box-sizing: border-box;
+    color: var(--clr-primary-white);
+    font-size: 1.35rem;
+    letter-spacing: 0.4px;
+    margin-bottom: 6vh;
+    /* font-stretch:extra-condensed; */
+    
+     */
+img{
+    border-radius: 50%;
+    /* width: 100%; */
+    height: 30px;
+    border: solid 1px whitesmoke;
+}
+.details{
+    display: flex; gap: 4vw;
+    color: var(--clr-primary-white);
+    font-size: 1rem;
+    margin-bottom: 4vh;
+}
+span{
+    opacity: 50%;
+    letter-spacing: 0.1px;
+}
+p{
+    font-size: 1rem;
+    opacity: 70%;
+    
+}
+.daniel{
+    grid-area: daniel;
+    background-color: var(--clr-moderate-violet);
+    border-radius: 10px;
+    padding: 4vh 6vw;
+    box-sizing: border-box;
+    color: var(--clr-primary-white);
+    font-size: 1.35rem;
+    letter-spacing: 0.4px;
+    margin-bottom: 6vh;
+}
+.jonathan{
+    grid-area: jon;
+    background-color:var(--clr-greyish-blue);
+    border-radius: 10px;
+    padding: 4vh 6vw;
+    box-sizing: border-box;
+    color: var(--clr-primary-white);
+    font-size: 1.35rem;
+    letter-spacing: 0.4px;
+    margin-bottom: 6vh;
+}
+.jean{
+    grid-area: jean;
+    font-weight: 700;
+    background-color:var(--clr-primary-white);
+    border-radius: 10px;
+    color: black;
+    padding: 4vh 6vw;
+    box-sizing: border-box;
+    /* color: var(--clr-primary-white); */
+    font-size: 1.35rem;
+    letter-spacing: 0.4px;
+    margin-bottom: 6vh;
+}
+.pat{
+    grid-area: pat;
+    background-color: var(--clr-balckish-blue);
+    border-radius: 10px;
+    padding: 4vh 6vw;
+    box-sizing: border-box;
+    color: var(--clr-primary-white);
+    font-size: 1.35rem;
+    letter-spacing: 0.4px;
+    margin-bottom: 6vh;
+}
+.kira{
+    grid-area: kira;
+    background-color: var(--clr-primary-white);
+    border-radius: 10px;
+    color: black;
+    padding: 4vh 6vw;
+    box-sizing: border-box;
+    color: var(--clr-primary-white);
+    font-size: 1.35rem;
+    letter-spacing: 0.4px;
+    margin-bottom: 6vh;
+}
+.J-text{
+    color: var(--clr-balckish-blue); 
+}
