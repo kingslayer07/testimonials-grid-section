@@ -14,31 +14,22 @@
 body{
     font-size: 13px;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 600;
+    /* font-weight: 600; */
     padding: 5vh 5vw;
     box-sizing: border-box;
     background-color: var(--clr-neutral-greyish-blue);
 }
-.cards{
-    display: grid;
-    grid-template-columns: repeat(4,20vw ) ;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "daniel daniel jon kira "
-    "jean pat pat kira";
-    grid-gap: 20px;
-}
-/* .main-card{
-
+ .main-card{
+    
     padding: 4vh 6vw;
     box-sizing: border-box;
     color: var(--clr-primary-white);
     font-size: 1.35rem;
     letter-spacing: 0.4px;
-    margin-bottom: 6vh;
     /* font-stretch:extra-condensed; */
-    
-     */
+    margin-bottom: 6vh;
+}
+
 img{
     border-radius: 50%;
     /* width: 100%; */
@@ -64,60 +55,69 @@ p{
     grid-area: daniel;
     background-color: var(--clr-moderate-violet);
     border-radius: 10px;
-    padding: 4vh 6vw;
-    box-sizing: border-box;
-    color: var(--clr-primary-white);
-    font-size: 1.35rem;
-    letter-spacing: 0.4px;
-    margin-bottom: 6vh;
+    
 }
 .jonathan{
     grid-area: jon;
     background-color:var(--clr-greyish-blue);
     border-radius: 10px;
-    padding: 4vh 6vw;
-    box-sizing: border-box;
-    color: var(--clr-primary-white);
-    font-size: 1.35rem;
-    letter-spacing: 0.4px;
-    margin-bottom: 6vh;
+
 }
 .jean{
     grid-area: jean;
-    font-weight: 700;
+    /* font-weight: 700; */
     background-color:var(--clr-primary-white);
     border-radius: 10px;
     color: black;
-    padding: 4vh 6vw;
-    box-sizing: border-box;
-    /* color: var(--clr-primary-white); */
-    font-size: 1.35rem;
-    letter-spacing: 0.4px;
-    margin-bottom: 6vh;
+    
 }
 .pat{
     grid-area: pat;
     background-color: var(--clr-balckish-blue);
     border-radius: 10px;
-    padding: 4vh 6vw;
-    box-sizing: border-box;
-    color: var(--clr-primary-white);
-    font-size: 1.35rem;
-    letter-spacing: 0.4px;
-    margin-bottom: 6vh;
+    
 }
 .kira{
     grid-area: kira;
     background-color: var(--clr-primary-white);
     border-radius: 10px;
     color: black;
-    padding: 4vh 6vw;
-    box-sizing: border-box;
-    color: var(--clr-primary-white);
-    font-size: 1.35rem;
-    letter-spacing: 0.4px;
-    margin-bottom: 6vh;
+   
 }
 .J-text{
     color: var(--clr-balckish-blue); 
 }
+
+@media only screen and (min-width: 500px){
+    body{
+        font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    /* font-weight: 600; */
+    padding: 120px 120px;
+    box-sizing: border-box;
+    background-color: var(--clr-neutral-greyish-blue);
+    }
+   
+    .cards{
+        
+        /* padding: 30px 20px; */
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(4,1fr ) ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "daniel daniel jon kira "
+        "jean pat pat kira";
+        grid-gap: 20px;
+        overflow: auto;
+    }
+    .main-card{
+       padding: 5% 5%;
+       box-sizing: border-box;
+       margin-bottom: 5px;
+    }
+    .details{
+        gap: 20px;
+    }
+
+}    
